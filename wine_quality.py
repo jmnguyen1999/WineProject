@@ -1,6 +1,7 @@
 #wine_quality.py
-#Purpose:       Reads training data from 'winequality-red.csv' and 'winequality-white.csv' and trains a model using Naive-bayes and KNN. Using the model, it compares its predictions to actual classifications to calculate accuracy, precision, f1 score, and recall. Does preprocessing of data before training model through looking at imbalance of data and finding correspondence between attributes.
-
+#Purpose:       Reads training data from 'winequality-red.csv' and 'winequality-white.csv' and trains a model using Naive-bayes and KNN. Using the model, it compares its predictions
+#               to actual classifications to calculate accuracy, precision, f1 score, and recall. Does preprocessing of data before training model through looking at imbalance of data and
+#               finding correspondence between attributes.
 
 import csv
 import numpy as np
