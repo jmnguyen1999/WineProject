@@ -15,7 +15,7 @@ from sklearn.model_selection import train_test_split
 #Class Constants:
 DATASETS = ['winequality-red.csv', 'winequality-white.csv']
 NUM_ATTRIBUTES = 11
-MAX_CORRELATION = 0.8
+MAX_CORRELATION = 0.65
 ATTRIBUTE_NAMES = ["fixed acidity","volatile acidity","citric acid","residual sugar","chlorides","free sulfur dioxide","total sulfur dioxide","density","pH","sulphates","alcohol"]
 
 
@@ -170,7 +170,6 @@ for ds in DATASETS:
 
     #3.)---------------------------------Machine Learning: Apply algorithms to train data + evaluate-------------------------------------
     X_train, X_test, y_train, y_test = train_test_split(newX, Y, test_size=0.2, random_state=0)
-
     #3a.) Perform Naive Bayes:
     gnb = GaussianNB()
     y_pred_gnb = gnb.fit(X_train, y_train).predict(X_test)
